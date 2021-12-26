@@ -5,21 +5,21 @@
  */
 package FirstScreenGUI;
 
-import static FirstScreenGUI.input.CAN_STOP;
-import static FirstScreenGUI.input.N;
-import static FirstScreenGUI.input.Submit;
+import static FirstScreenGUI.InputScreen.CAN_STOP;
+import static FirstScreenGUI.InputScreen.N;
+import static FirstScreenGUI.InputScreen.Submit;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
 import javax.swing.JOptionPane;
-import n_queens.SolverThread;
+import N_queens_solver_package.SolverThread;
 
 /**
  *
  * @author عبدالله أحمد حسن
  */
-public class input extends javax.swing.JFrame implements ActionListener {
+public class InputScreen extends javax.swing.JFrame implements ActionListener {
 
     public static javax.swing.JLabel Title = new javax.swing.JLabel();
     public static javax.swing.JLabel jLabel1 = new javax.swing.JLabel();
@@ -35,7 +35,7 @@ public class input extends javax.swing.JFrame implements ActionListener {
     /**
      * Creates new form input
      */
-    public input() {
+    public InputScreen() {
         initComponents();
     }
 
@@ -51,7 +51,7 @@ public class input extends javax.swing.JFrame implements ActionListener {
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">                          
     private void initComponents() {
-        input.addKeyListener(new KeyListener1(input,this));
+        input.addKeyListener(new KeyListenerObject(input,this));
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         Title.setFont(new java.awt.Font("Courgette", 0, 48)); // NOI18N

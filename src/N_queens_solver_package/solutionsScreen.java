@@ -1,4 +1,4 @@
-package n_queens;
+package N_queens_solver_package;
 
 import java.awt.Color;
 import java.awt.GridLayout;
@@ -9,7 +9,7 @@ import javax.swing.*;
 //import javax.swing.border.Border;
 import java.util.Scanner;  // Import the Scanner class
 
-public class MyFrame extends JFrame implements KeyListener {
+public class solutionsScreen extends JFrame implements KeyListener {
 
     int n;
     int solutions_counter = 0;
@@ -17,7 +17,7 @@ public class MyFrame extends JFrame implements KeyListener {
     JFrame frame = new JFrame();
     ImageIcon image = new ImageIcon("Queen icon.jpg");      //size 66*100
 
-    MyFrame(int n) {
+    solutionsScreen(int n) {
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);// to close the application not only the frame
         frame.setIconImage(image.getImage());
         frame.setSize(700, 700);

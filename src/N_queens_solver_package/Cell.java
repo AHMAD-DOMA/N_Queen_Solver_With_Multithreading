@@ -1,4 +1,4 @@
-package n_queens;
+package N_queens_solver_package;
 
 import java.awt.Color;
 import java.awt.Image;

@@ -5,8 +5,8 @@
  */
 package FirstScreenGUI;
 
-import static FirstScreenGUI.input.CAN_STOP;
-import static FirstScreenGUI.input.N;
+import static FirstScreenGUI.InputScreen.CAN_STOP;
+import static FirstScreenGUI.InputScreen.N;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
 import javax.swing.JFrame;
@@ -16,12 +16,12 @@ import javax.swing.JOptionPane;
  *
  * @author ahmad
  */
-public class KeyListener1 implements KeyListener {
+public class KeyListenerObject implements KeyListener {
 
     public javax.swing.JTextField input;
     public JFrame frame;
 
-    KeyListener1(javax.swing.JTextField input, JFrame frame) {
+    KeyListenerObject(javax.swing.JTextField input, JFrame frame) {
         this.input = input;
         this.frame = frame;
     }

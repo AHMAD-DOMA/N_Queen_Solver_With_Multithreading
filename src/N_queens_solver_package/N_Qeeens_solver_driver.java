@@ -3,24 +3,24 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package n_queens;
+package N_queens_solver_package;
 
-import FirstScreenGUI.input;
-import static FirstScreenGUI.input.CAN_STOP;
+import FirstScreenGUI.InputScreen;
+import static FirstScreenGUI.InputScreen.CAN_STOP;
 import java.util.Scanner;  // Import the Scanner class
 import java.util.concurrent.atomic.AtomicInteger;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import java.util.ArrayList; // import the ArrayList class
 import java.util.List;
-import n_queens.SolverThread;
-import static n_queens.SolverThread.N;
+import N_queens_solver_package.SolverThread;
+import static N_queens_solver_package.SolverThread.N;
 
 /**
  *
  * @author ahmad
  */
-public class N_Qeeens {
+public class N_Qeeens_solver_driver {
 
     /**
      * @param args the command line arguments
@@ -28,11 +28,11 @@ public class N_Qeeens {
     static int N;
 
     public static void main(String args[]) {
-        input Input = new input();
+        InputScreen Input = new InputScreen();
         Input.setVisible(true);
         Input.setTitle("N Queen Solver");
-        while (input.CAN_STOP_window() != true);
-        N = input.N;
+        while (InputScreen.CAN_STOP_window() != true);
+        N = InputScreen.N;
         Input.setTitle("N Queen Solver - Processing ... Please Wait..");
         ArrayList<Thread> threadsArray = new ArrayList<Thread>();
         int count = 0;
@@ -64,7 +64,7 @@ public class N_Qeeens {
 //            printSolution(GfG.solutions.get(i), i);
 //        }
 //        System.out.println("════════════════════════════════════════════════");
-        new MyFrame(N);
+        new solutionsScreen(N);
 
     }
 

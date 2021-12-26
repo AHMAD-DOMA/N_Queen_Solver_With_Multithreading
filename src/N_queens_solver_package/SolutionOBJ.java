@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package n_queens;
+package N_queens_solver_package;
 
 /**
  *

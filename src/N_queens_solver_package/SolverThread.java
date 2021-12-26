@@ -1,11 +1,11 @@
-package n_queens;
+package N_queens_solver_package;
 
 import java.util.Arrays;
 import java.util.ArrayList; // import the ArrayList class
 import java.util.Collections;
 import java.util.List;
 import java.util.concurrent.atomic.AtomicInteger;
-import n_queens.SolutionOBJ;
+import N_queens_solver_package.SolutionOBJ;
 
 public class SolverThread extends Thread {
 
