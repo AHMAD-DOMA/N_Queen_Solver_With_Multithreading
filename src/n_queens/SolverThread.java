@@ -15,14 +15,14 @@ public class SolverThread extends Thread {
     static int N;
     int TN;
 
-    public SolverThread(boolean[][] mat, int col, int N, int TN) {
-        this.board = mat;
+    public SolverThread(boolean[][] board, int col, int N, int TN) {
+        this.board = board;
         this.col = col;
         this.N = N;
         this.TN = TN;
     }
 
-    private synchronized static boolean isSafe(boolean[][] board, int row, int col) {
+    private static boolean isSafe(boolean[][] board, int row, int col) {
         for (int i = 0; i < row; i++) {
             if (board[i][col] == true) {
                 return false;
@@ -44,7 +44,7 @@ public class SolverThread extends Thread {
         return true;
     }
 
-    private synchronized static void addSolution(SolutionOBJ solution) {
+    private static void addSolution(SolutionOBJ solution) {
         if (TrueBoard(solution.board)) {
             boolean[][] copiped_board = new boolean[N][N];
             for (int i = 0; i < solution.board.length; i++) {
@@ -89,7 +89,7 @@ public class SolverThread extends Thread {
 //    public ArrayList<char[][]> getSolutions() {
 //        return solutions;
 //    }
-    private synchronized static void nQueen(boolean[][] board, int col, int TN) {
+    private static void nQueen(boolean[][] board, int col, int TN) {
         if (col == board.length) {
             addSolution(new SolutionOBJ(board, TN));
             return;
